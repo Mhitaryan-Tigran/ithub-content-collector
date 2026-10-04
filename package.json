@@ -1,0 +1,18 @@
+{
+  "name": "content-collector",
+  "version": "1.0.0",
+  "description": "HTTP-клиент и сервер для сбора контента из интернета по ключевым словам",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^4.22.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

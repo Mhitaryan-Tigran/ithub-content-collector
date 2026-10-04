@@ -1,0 +1,27 @@
+{
+  "javascript": [
+    "https://developer.mozilla.org/ru/docs/Web/JavaScript",
+    "https://learn.javascript.ru/intro",
+    "https://ru.wikipedia.org/wiki/JavaScript"
+  ],
+  "nodejs": [
+    "https://nodejs.org/en/about",
+    "https://ru.wikipedia.org/wiki/Node.js",
+    "https://expressjs.com/ru/starter/hello-world.html"
+  ],
+  "xml": [
+    "https://ru.wikipedia.org/wiki/XML",
+    "https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction",
+    "https://www.w3.org/standards/xml/core"
+  ],
+  "ростов": [
+    "https://ru.wikipedia.org/wiki/Ростов-на-Дону",
+    "https://wttr.in/Rostov-on-Don?format=4",
+    "https://ru.wikipedia.org/wiki/Ростовская_область"
+  ],
+  "космос": [
+    "https://ru.wikipedia.org/wiki/Космос",
+    "https://ru.wikipedia.org/wiki/Международная_космическая_станция",
+    "https://www.nasa.gov/about/"
+  ]
+}

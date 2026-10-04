@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сборщик контента</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">⌁</span> Сборщик контента</div>
+  <div class="net" id="net">онлайн</div>
+</header>
+<main class="grid">
+  <section class="panel search">
+    <h2>1. Ключевое слово</h2>
+    <form id="search">
+      <input id="word" placeholder="например, javascript" autocomplete="off" required>
+      <button type="submit">Найти</button>
+    </form>
+    <div class="chips" id="chips"></div>
+    <h2>2. Выберите адрес</h2>
+    <ul class="urls" id="urls"><li class="empty">Введите ключевое слово</li></ul>
+    <div class="progress" id="progress" hidden>
+      <div class="bar"><span id="bar"></span></div>
+      <div class="stats"><span id="percent">0%</span><span id="size">0 КБ</span><span id="speed"></span></div>
+    </div>
+  </section>
+  <section class="panel saved">
+    <h2>3. Сохранено для чтения офлайн</h2>
+    <ul class="items" id="items"></ul>
+    <div class="quota" id="quota"></div>
+  </section>
+  <section class="panel viewer">
+    <div class="viewer-head">
+      <h2 id="viewer-title">Просмотр</h2>
+      <span class="meta" id="viewer-meta"></span>
+    </div>
+    <iframe id="frame" sandbox title="Сохранённая страница"></iframe>
+    <pre id="text" hidden></pre>
+    <div class="placeholder" id="placeholder">Выберите сохранённую страницу, чтобы открыть её даже без интернета</div>
+  </section>
+</main>
+<div class="toast" id="toast" role="alert" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
