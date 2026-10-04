@@ -36,10 +36,18 @@ npm start
 
 Открыть http://localhost:3000. Порт можно задать переменной окружения `PORT`.
 
+## Демо
+
+https://ithub-content-collector.pages.dev
+
 ## Деплой
 
-В репозитории есть `render.yaml`: на Render достаточно создать Blueprint из этого репозитория, и сервис соберётся командой `npm install` и запустится командой `npm start`.
+Публичная версия работает на Cloudflare Pages: статика из `public/`, а серверная часть — Pages Functions в `functions/api/[[path]].js` с теми же маршрутами, что и в `server.js`. Страница скачивается целиком (до 5 МБ), после чего отдаётся клиенту потоком с точным размером в `X-Content-Length`.
+
+```
+npx wrangler pages deploy
+```
 
 ## Стек
 
-Node.js, Express, клиент на чистом JavaScript (Fetch API, Streams API, LocalStorage), без сборки.
+Node.js, Express (локально), Cloudflare Pages Functions (публично), клиент на чистом JavaScript (Fetch API, Streams API, LocalStorage), без сборки.
